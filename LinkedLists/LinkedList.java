@@ -43,6 +43,8 @@ public class LinkedList {
         printList();
         head = removeNthFromEnd(head, 2);
         printList();
+        Node mid = middleNode(head);
+        System.out.println(mid.data);
     }
 
     public static void addFirst(int data){
@@ -205,6 +207,18 @@ public class LinkedList {
             curr = next;
         }
         return prev;
+    }
+
+    public static Node middleNode(Node head) {
+        //using the two pointers approach
+        Node fast = head;
+        Node slow = head;
+
+        while(fast != null && fast.next != null){
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 
     public static Node removeNthFromEnd(Node head, int n) {
