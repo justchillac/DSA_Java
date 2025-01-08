@@ -1,5 +1,7 @@
 package LinkedLists;
 
+import DSASheet.LinkedLists.ReverseLinkedList2.ListNode;
+
 public class LinkedList {
     //Creating a Node blueprint
     public static class Node {
@@ -39,12 +41,17 @@ public class LinkedList {
         // System.out.println(size);
         System.out.println(itSearch(30));
         System.out.println(recSearch(head, 30));
-        head = reverseList(head);
+        // head = reverseList(head);
         printList();
-        head = removeNthFromEnd(head, 2);
+        // head = removeNthFromEnd(head, 2);
         printList();
         Node mid = middleNode(head);
         System.out.println(mid.data);
+        addLast(4);
+        addLast(3);
+        addLast(14);
+        printList();
+        System.out.println(isPalindrome(head));
     }
 
     public static void addFirst(int data){
@@ -252,6 +259,35 @@ public class LinkedList {
         prev.next = temp.next;
         // temp.next = null;
         return head;
+    }
+
+    public static boolean isPalindrome(Node head) {
+       if(head == null || head.next == null) return true; //Single node or empty list
+
+       //Step 1: Getting the middle node
+       Node mid = middleNode(head);
+
+       //Step 2 : reverse 2nd half 
+       Node prev = null;
+       Node curr = mid;
+       Node next;
+       while(curr != null){
+        next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+       }
+       Node right = prev;
+       Node left = head;
+
+       //Step 3 Keep on comparing the data of LL from both sides
+       while (right != null) {
+        if(left.data != right.data) return false;
+        right = right.next;
+        left = left.next;
+       }
+       return true;
+
     }
 
 }
