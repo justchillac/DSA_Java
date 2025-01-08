@@ -39,6 +39,8 @@ public class LinkedList {
         // System.out.println(size);
         System.out.println(itSearch(30));
         System.out.println(recSearch(head, 30));
+        head = reverseList(head);
+        printList();
     }
 
     public static void addFirst(int data){
@@ -187,6 +189,20 @@ public class LinkedList {
             return -1;
         }
         return idx+1;
+    }
+
+    public static Node reverseList(Node head) {
+        Node prev = null;
+        Node curr = head;
+        Node next;
+
+        while(curr!=null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
     }
 
 }
