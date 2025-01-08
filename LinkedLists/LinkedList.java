@@ -41,6 +41,8 @@ public class LinkedList {
         System.out.println(recSearch(head, 30));
         head = reverseList(head);
         printList();
+        head = removeNthFromEnd(head, 2);
+        printList();
     }
 
     public static void addFirst(int data){
@@ -203,6 +205,39 @@ public class LinkedList {
             curr = next;
         }
         return prev;
+    }
+
+    public static Node removeNthFromEnd(Node head, int n) {
+           //First we get the size of the LL
+       Node temp = head;
+       int size = 0;
+       while(temp != null){
+            size++;
+            temp = temp.next;
+       }
+       //Exception case 
+       if(n == size){
+        head = head.next;
+        return head;
+       }
+        //Next let's try to get the index of the nth node
+        int index = size - n;
+        int i = 0;
+        Node prev = head;
+        temp = head;
+
+        while(i < index){
+            i++;
+            temp = temp.next;
+        }
+        i = 0;
+        while(i < index-1){
+            i++;
+            prev = prev.next;
+        }
+        prev.next = temp.next;
+        // temp.next = null;
+        return head;
     }
 
 }
