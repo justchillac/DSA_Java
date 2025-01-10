@@ -229,7 +229,7 @@ public class LinkedList {
     }
 
     public static Node removeNthFromEnd(Node head, int n) {
-           //First we get the size of the LL
+        //First we get the size of the LL
        Node temp = head;
        int size = 0;
        while(temp != null){
