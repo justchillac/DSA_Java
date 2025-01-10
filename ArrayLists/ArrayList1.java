@@ -11,5 +11,16 @@ public class ArrayList1 {
         list.add(4);
         list.add(5);
         System.out.println(list);
+        System.out.println(list.size());
+
+        reverseAL(list);
     }
+
+    public static void reverseAL(ArrayList lt){
+        for(int i= lt.size()-1;i>=0;i--){
+            System.out.print(lt.get(i) + " ");
+        }
+    }
+
+    
 }
