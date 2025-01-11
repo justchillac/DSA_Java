@@ -1,6 +1,6 @@
 package LinkedLists;
 
-import DSASheet.LinkedLists.ReverseLinkedList2.ListNode;
+// import DSASheet.LinkedLists.ReverseLinkedList2.ListNode;
 
 public class LinkedList {
     //Creating a Node blueprint
