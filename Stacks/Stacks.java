@@ -1,9 +1,5 @@
 package Stacks;
 
-<<<<<<< HEAD
-public class Stacks {
-    
-=======
 import java.util.ArrayList;
 
 public class Stacks {
@@ -44,5 +40,4 @@ public class Stacks {
             s.pop();
         }
     }
->>>>>>> Stacks
 }
