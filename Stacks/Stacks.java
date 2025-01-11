@@ -6,6 +6,7 @@ public class Stacks {
     //implementation using array list
     static class StackA{
         static ArrayList<Integer> list = new ArrayList<>();
+        //isEmpty method
         public static boolean isEmpty(){
             return list.size() == 0;
         }
