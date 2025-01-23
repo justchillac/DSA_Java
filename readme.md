@@ -6,6 +6,7 @@ Welcome to the DSA Practice Problems repository! This project contains various d
 
 ## 📂 Project Structure
 
+```
 ├── ArrayLists/ 
 ├── Backtracking/ 
 ├── DivideAndConquer/ 
@@ -20,6 +21,7 @@ Welcome to the DSA Practice Problems repository! This project contains various d
 ├── Stacks/ 
 ├── PracticeProblem/ 
 └── readme.md
+```
 
 
 ---
