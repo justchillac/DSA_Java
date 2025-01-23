@@ -30,8 +30,8 @@ Welcome to the DSA Practice Problems repository! This project contains various d
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/justchillac/DSA-Practice-Problems.git
-    cd DSA-Practice-Problems
+    git clone https://github.com/justchillac/DSA_Java.git
+    cd DSA_Java
     ```
 
 2. **Open the project in your favorite IDE (e.g., Visual Studio Code).**
