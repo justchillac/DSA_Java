@@ -65,7 +65,7 @@ Contributions are welcome! If you have any improvements or new problems to add, 
 
 ## 📧 Contact
 
-If you have any questions or suggestions, feel free to reach out to me at 
+If you have any questions or suggestions, feel free to reach out to me via 
 [LinkedIn](https://www.linkedin.com/in/atharva-chilwerwar-97871b24b/)
 [chilwerwaratharva@example.com].
 
