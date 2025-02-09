@@ -24,8 +24,10 @@ public class MergeSortOnLL {
         ms.head.next.next.next.next = new Node(1);
         ms.printList();
         head = mergeSort(head);
-        System.out.println();
+        // System.out.println();
         ms.printList();
+
+        System.out.println("This is just to test how to resolve conflicts");
 
     }
 
@@ -35,6 +37,7 @@ public class MergeSortOnLL {
             System.out.print(temp.data + " ");
             temp = temp.next;
         }
+        System.out.println();
     }
 
     public static Node mergeSort(Node head){
